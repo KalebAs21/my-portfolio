@@ -3,39 +3,40 @@ import { Github, ExternalLink } from "lucide-react"; // icons from lucide-react
 
 const projects = [
   {
-    id: 1,
-    title: "Amazon Web App",
-    description: "A full-stack e-commerce platform inspired by Amazon, featuring product listings, cart, and checkout functionalities.",
-    image: "/images/amazon.jpg",
-    technologies: ["React", "Node.js", "MongoDB", "Tailwind CSS"],
-    github: "https://github.com/yourusername/amazon-clone",
-    demo: "https://amazon-clone-demo.vercel.app",
-  },
-  {
     id: 2,
     title: "Food Delivery Web App",
     description: "A responsive food ordering platform that allows users to browse restaurants and track their orders in real-time.",
-    image: "/images/foodapp.jpg",
+    image: "/images/foodapp.png",
     technologies: ["Next.js", "Express", "MongoDB", "Stripe"],
-    github: "https://github.com/yourusername/food-delivery",
+    github: "https://github.com/KalebAs21/food-del",
     demo: "https://food-delivery-demo.vercel.app",
   },
+  {
+    id: 1,
+    title: "Amazon Web App",
+    description: "A full-stack e-commerce platform inspired by Amazon, featuring product listings, cart, and checkout functionalities.",
+    image: "/images/amazon.png",
+    technologies: ["React", "Node.js", "MongoDB", "Tailwind CSS"],
+    github: "https://github.com/KalebAs21/javascript-amazon-project",
+    demo: "https://amazon-clone-demo.vercel.app",
+  },
+  
   {
     id: 3,
     title: "Local Service Web App",
     description: "A marketplace for finding nearby services like electricians, plumbers, and tutors, with user reviews and location filtering.",
-    image: "/images/serviceapp.jpg",
+    image: "/images/serviceapp.png",
     technologies: ["React", "Firebase", "Tailwind CSS"],
-    github: "https://github.com/yourusername/local-service-app",
+    github: "https://github.com/KalebAs21/local-service-",
     demo: "https://local-service-app.vercel.app",
   },
   {
     id: 4,
     title: "Mentorship Platform",
     description: "A platform connecting university freshmen with senior mentors for guidance, built with Node.js and React.",
-    image: "/images/mentorship.jpg",
+    image: "/images/mentorship.png",
     technologies: ["React", "Node.js", "Express", "MongoDB"],
-    github: "https://github.com/yourusername/mentorship-platform",
+    github: "https://github.com/tewmih/student-mentorship-management",
     demo: "https://mentorship-demo.vercel.app",
   },
 ];
@@ -63,14 +64,14 @@ const ProjectsSection = () => {
                 />
                 {/* Overlay on hover */}
                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
-                  <a
+                  {/* <a
                     href={project.demo}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-primary text-primary-foreground p-2 rounded-full hover:scale-110 transition"
                   >
                     <ExternalLink size={20} />
-                  </a>
+                  </a> */}
                   <a
                     href={project.github}
                     target="_blank"
