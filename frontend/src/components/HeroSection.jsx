@@ -13,7 +13,7 @@ export const HeroSection = () => {
           <img
             src="/profile.jpg"
             alt="Kaleb"
-            className="w-64 h-64 md:w-72 md:h-90 rounded-full  object-cover border border-white/10 shadow-xl"
+            className="w-64 h-80 md:w-72 md:h-93 rounded-full  object-cover border border-white/10 shadow-xl"
           />
         </div>
 
